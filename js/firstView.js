@@ -4,6 +4,7 @@ const finalBox = document.getElementById('final-box');
 let dragItem;
 document.addEventListener('drag', (e) => {
     e.dataTransfer.setData("image/.jpg", e.target.id);
+console.log(e.dataTransfer.setData('', e.target.id));
 
 }, false)
 document.addEventListener('dragstart', () => {
